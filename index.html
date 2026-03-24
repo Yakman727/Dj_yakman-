@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Yakman | Wesela, 18-stki, studniówki, urodziny</title>
+  <meta name="description" content="DJ Yakman - oprawa muzyczna wesel, 18-stek, studniówek, urodzin i imprez okolicznościowych.">
+  <style>
+    :root{
+      --bg:#08080b;
+      --card:#14141d;
+      --text:#f5f7fb;
+      --muted:#bfc6d4;
+      --accent:#ff6a00;
+      --line:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial,sans-serif;
+      background:#08080b;
+      color:var(--text);
+      line-height:1.6;
+    }
+    .container{width:min(1100px, calc(100% - 32px)); margin:0 auto}
+    .hero{
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
+      align-items:center;
+      padding:40px 0;
+    }
+    h1{
+      font-size:clamp(42px, 7vw, 78px);
+      line-height:0.95;
+      margin:0 0 16px;
+    }
+    .lead{
+      font-size:20px;
+      color:var(--muted);
+      margin-bottom:24px;
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      background:var(--accent);
+      color:#111;
+    }
+    .hero img{
+      width:100%;
+      border-radius:22px;
+      display:block;
+    }
+    section{padding:70px 0}
+    h2{
+      font-size:36px;
+      margin:0 0 16px;
+      text-align:center;
+    }
+    .text{
+      color:var(--muted);
+      max-width:760px;
+      margin:0 auto 28px;
+      text-align:center;
+    }
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:16px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+      text-align:center;
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+    }
+    .gallery img{
+      width:100%;
+      border-radius:20px;
+      display:block;
+    }
+    .contact{
+      text-align:center;
+      background:var(--card);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      padding:60px 20px;
+    }
+    .phone{
+      font-size:36px;
+      font-weight:800;
+      text-decoration:none;
+      color:white;
+    }
+    footer{
+      text-align:center;
+      color:var(--muted);
+      padding:24px;
+    }
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr 1fr}
+      .gallery{grid-template-columns:1fr}
+    }
+    @media (max-width: 560px){
+      .cards{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container hero">
+    <div>
+      <h1>DJ Yakman</h1>
+      <p class="lead">
+        Oprawa muzyczna wesel, 18-stek, studniówek, urodzin i imprez okolicznościowych.
+        Muzyka, energia i pełny parkiet przez całą noc.
+      </p>
+      <a class="btn" href="#kontakt">Zarezerwuj termin</a>
+    </div>
+    <div>
+      <img src="IMG_2851.png" alt="DJ Yakman">
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2>O mnie</h2>
+      <p class="text">
+        Jestem DJ-em, który dopasowuje muzykę do klimatu imprezy i gości.
+        Zagram wszystko — wesele, 18-stkę, studniówkę, urodziny i inne imprezy okolicznościowe.
+        Dbam o świetną atmosferę, energię i zabawę do samego końca.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Gram na takich wydarzeniach</h2>
+      <div class="cards">
+        <div class="card">🎉 Wesela</div>
+        <div class="card">🔥 18-stki</div>
+        <div class="card">🎓 Studniówki</div>
+        <div class="card">🎂 Urodziny</div>
+        <div class="card">🎧 Imprezy okolicznościowe</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Galeria</h2>
+      <div class="gallery">
+        <img src="IMG_2851.png" alt="DJ Yakman zdjęcie 1">
+        <img src="IMG_3362.png" alt="DJ Yakman zdjęcie 2">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Zadzwoń i zapytaj o wolny termin:</p>
+    <a class="phone" href="tel:+48795905415">795 905 415</a>
+  </section>
+
+  <footer>
+    © 2026 DJ Yakman
+  </footer>
+
+</body>
+</html>
